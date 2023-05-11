@@ -244,14 +244,14 @@ import pretty from 'pretty';
 
 import buttonHovers from '../mixins/buttonHovers';
 
-import { FormField, HandlesValidationErrors } from 'laravel-nova';
+import { DependentFormField, HandlesValidationErrors } from 'laravel-nova';
 
 import PlaceholderBlockExtension from '../extensions/PlaceholderBlockExtension.js';
 import VideoContentBlockExtension from './content-blocks/VideoContentBlockExtension.js';
 import GalleryContentBlockExtension from './content-blocks/GalleryContentBlockExtension.js';
 
 export default {
-    mixins: [FormField, HandlesValidationErrors, buttonHovers],
+    mixins: [DependentFormField, HandlesValidationErrors, buttonHovers],
 
     props: ['resourceName', 'resourceId', 'field'],
 
